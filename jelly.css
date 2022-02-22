@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;  
+    font-family: 'Shrikhand', cursive; /*폰트고민*/
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #FEF5FF;
+    -webkit-text-stroke: 1px #511B5F;
+    font-size: 25px;
+}
+
+.login {
+    background-color: #511B5F;
+    border-radius: 40px;
+    padding: 3px 30px;
+    cursor: pointer; /*login글씨 클릭범위 수정*/
+}
+
+.login > a {
+    text-decoration: none;
+    color:#FEF5FF;
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.main > img {
+    width: 420px; /*position을 relative? absolute?*/
+    float: right;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text > h1 {
+    margin-bottom: 30px;
+}
+
+.main-text > h1 > a {
+    text-decoration: none;
+    font-family: 'Lily Script One', cursive;
+    font-size: 96px;
+    color: #511B5F;
+    text-shadow: 0.5px 1px 1px #AAAAAA;
+}
+
+.main-text > p {
+    font-family: 'Pangolin', cursive;
+}
