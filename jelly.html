@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jelly.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&family=Margarine&family=Pangolin&family=Shrikhand&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&family=Margarine&family=Pangolin&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <div class="menu">
+            <div class="menu" id="menulink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Story</a></li>
@@ -23,9 +23,11 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             <div class="login">
                 <a href="login.html">Login</a>
             </div>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
         </nav>
         <div class="main">
             <div class="main-text">
@@ -37,6 +39,51 @@
             <img src="./image/jellyco.png">
         </div>
     </section>
+
+    <!------- catalogue ------->
+
+    <section class="catalogue">
+        <h1>New Jelly Catalogue</h1>
+        <div class="row">
+            <div class="catalogue-col">
+                <img src="/image/heartjelly.png">
+                <h3>Mango&Cherry Mixed</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur<br>
+                    adipisicing elit. Quaerat sit vero officiis.</p>
+            </div>
+            <div class="catalogue-col">
+                <img src="./image/greenbear.png">
+                <h3>Sour Bear</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur<br>
+                    adipisicing elit. Quaerat sit vero officiis.</p>
+            </div>
+            <div class="catalogue-col">
+                <img src="./image/rose.png">
+                <h3>Red Rose</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur<br>
+                    adipisicing elit. Quaerat sit vero officiis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------- catalogue ------->
+
+    <section class="">
+        <h1></h1>
+    </section>
+
+    <!-------- Javascript for Toggle Menu -------->
+    <script>
+
+        var menulink = document.getElementById("menulink")
+        function showMenu() {
+            menulink.style.left = "0";
+        }
+        function hideMenu() {
+            menulink.style.left = "-200px";
+        }
+
+    </script>
 </body>
 
 </html>
