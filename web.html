@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&family=Margarine&family=Pangolin&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title>Document</title>
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <div class="menu">
+            <div class="menu" id="menulink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Story</a></li>
@@ -20,18 +25,36 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             <div class="login">
                 <a href="">Login</a>
             </div>
+            <a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </nav>
 
         <div class="title">
-            <h1>Helly Jello</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto suscipit corporis iure odit modi!
-                Iste dolor obcaecati harum, doloribus officiis facere ipsum.</p>
+            <div class="title-text">
+                <h1><a href="web.html">Helly Jello</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                    Pellenteseque aliquet turpis nulla, eleifend faucibus est <br>
+                    sollicitudin ut. Maecenas ut venenatis ex, Donec sit.</p>
+            </div>
+            <img src="./image/jellyco.png">
         </div>
     </section>
 
+    <!-------- Javascript for Toggle Menu -------->
+    <script>
+
+        var menulink = document.getElementById("menulink")
+        function showMenu() {
+            menulink.style.left = "0";
+        }
+        function hideMenu() {
+            menulink.style.left = "-200px";
+        }
+
+    </script>
 </body>
 
 </html>
