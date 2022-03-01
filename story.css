@@ -18,9 +18,9 @@ a {
 }
 
 .header {
-    height: 400px;
+    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(44, 5, 42, 0.7), rgba(44, 5, 42, 0.7)),
+    background-image: linear-gradient(rgba(43, 15, 6, 0.7), rgba(43, 15, 6, 0.7)),
     url(./image/story-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -40,21 +40,40 @@ nav {
 }
 
 .menu > ul > li > a {
-    color: #FEF5FF;
-    -webkit-text-stroke: 1px #511B5F;
+    color: #fffaf5;
+    -webkit-text-stroke: 1px #5f231b;
     font-size: 25px;
+}
+
+.menu > ul > li > a:hover {
+    color:#5f231b;
+    transition: 0.3s;
 }
 
 .title {
     text-align: center;
-    color: #FEF5FF;
+    color: #fffaf5;
     font-family: 'Shrikhand', cursive;
-    margin: 100px auto;
+    margin: 200px auto;
+    animation: fadeInUp 1s;
 }
 
 .title > h1 {
-    color: #f4c7ff;
+    color: #ffca9e;
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+/*-----colum-----*/
 
 .colum {
     font-family: 'Pangolin', cursive;
@@ -85,5 +104,5 @@ nav {
 }
 
 .text {
-    color: #554B54;
+    color: #494234;
 }

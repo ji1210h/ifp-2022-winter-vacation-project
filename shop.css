@@ -4,7 +4,18 @@
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 19px;
+    margin-top: 7px;
 }
 
 a {
@@ -12,9 +23,9 @@ a {
 }
 
 .header {
-    height: 400px;
+    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(44, 5, 42, 0.7), rgba(44, 5, 42, 0.7)),
+    background-image: linear-gradient(rgba(44, 5, 28, 0.7), rgba(44, 5, 28, 0.7)),
     url(./image/shop-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -34,7 +45,71 @@ nav {
 }
 
 .menu > ul > li > a {
-    color: #FEF5FF;
-    -webkit-text-stroke: 1px #511B5F;
+    color: #ffe8f3;
+    -webkit-text-stroke: 1px #5e1326;
     font-size: 25px;
+}
+
+.menu > ul > li > a:hover {
+    color:#5e1326;
+    transition: 0.3s;
+}
+
+.title {
+    text-align: center;
+    color: #ffe8f3;
+    font-family: 'Shrikhand', cursive;
+    margin: 200px auto;
+    animation: fadeInUp 1s;
+}
+
+.title > h1 {
+    color: #ffbedc;
+}
+
+.colum > h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: 'Gochi Hand', cursive;
+    color: #e66787;
+}
+
+.goodsdiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+    font-family: 'Pangolin', cursive;
+    color: #300a13;
+}
+
+.goods {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.goods > img {
+    width: auto;
+    height: 120px;
+    padding-bottom: 20px;
+}
+
+
+
+.goods:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
