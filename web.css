@@ -77,6 +77,10 @@ nav {
     font-family: 'Pangolin', cursive;
 }
 
+.fa-solid {
+    display: none;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -86,10 +90,6 @@ nav {
         opacity: 1;
         transform: translateZ(0);
     }
-}
-
-.fa-solid {
-    display: none;
 }
 
 @media(max-width: 700px) {

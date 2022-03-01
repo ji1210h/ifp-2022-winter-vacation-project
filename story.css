@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(44, 5, 42, 0.7), rgba(44, 5, 42, 0.7)),
+    url(./image/story-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;  
+    font-family: 'Shrikhand', cursive;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+.menu > ul > li > a {
+    color: #FEF5FF;
+    -webkit-text-stroke: 1px #511B5F;
+    font-size: 25px;
+}
+
+.title {
+    text-align: center;
+    color: #FEF5FF;
+    font-family: 'Shrikhand', cursive;
+    margin: 100px auto;
+}
+
+.title > h1 {
+    color: #f4c7ff;
+}
+
+.colum {
+    font-family: 'Pangolin', cursive;
+}
+
+.factory, .company, .store {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.right {
+    text-align: right;
+}
+
+.factory > img,
+.company > img
+{
+    max-width: 400px;
+    max-height: 300px;
+    margin-right: 20px;
+}
+
+.store > img {
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 20px;
+}
+
+.text {
+    color: #554B54;
+}

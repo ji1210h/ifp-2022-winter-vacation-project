@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(44, 5, 42, 0.7), rgba(44, 5, 42, 0.7)),
+    url(./image/shop-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;  
+    font-family: 'Shrikhand', cursive;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+.menu > ul > li > a {
+    color: #FEF5FF;
+    -webkit-text-stroke: 1px #511B5F;
+    font-size: 25px;
+}
